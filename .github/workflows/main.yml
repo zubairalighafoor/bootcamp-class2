@@ -30,10 +30,12 @@ jobs:
     with:
       # Yarn command
       cmd: install
+    
     -name: Creating Build
      run: yarn build
       
     -name: installing surge
      run: npm install --global surge
+     
     -name: deploying on surge
       run: surge ./build http://zubairbootcampclass2.surge.sh/ token ${{ secrets.SURGE_TOKEN2 }}
