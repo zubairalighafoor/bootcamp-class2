@@ -21,7 +21,7 @@ jobs:
     - uses: actions/checkout@v2
 
     -name: Setup Node.js environment
-    uses: actions/setup-node@v2-beta
+    uses: actions/setup-node@1.4.2
     with:
       version: 12
     
@@ -31,7 +31,7 @@ jobs:
       # Yarn command
       cmd: install
     
-    - name: Creating Build
+    -name: Creating Build
      run: yarn build
       
     -name: installing surge
