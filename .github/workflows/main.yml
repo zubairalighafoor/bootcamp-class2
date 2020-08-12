@@ -25,8 +25,8 @@ jobs:
     with:
       version: 12
     
-    -name: Yarn CLI
-    uses: CultureHQ/actions-yarn@v1.0.1
+    -name: Yarn install
+     run: : npm install --global yarn
     
     -name: Creating Build
      run: yarn build
