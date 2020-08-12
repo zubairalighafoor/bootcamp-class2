@@ -20,15 +20,15 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: Setup Node.js environment
+    -name: Setup Node.js environment
     uses: actions/setup-node@v2-beta
     with:
       version: 12
     
-    - name: Creating Build
+    -name: Creating Build
      run: npm build
       
-    - name: installing surge
+    -name: installing surge
      run: npm install --global surge
-    - name: deploying on surge
+    -name: deploying on surge
       run: surge ./build http://zubairbootcampclass2.surge.sh/ token ${{ secrets.SURGE_TOKEN2 }}
