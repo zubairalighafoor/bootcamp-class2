@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Dinner from './dinner.js';
+import Parent from './Parent.js';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-         <Dinner dishName="Baryani" sweetDish="Halwa"/>
+        <Parent name="Zubair"/>
       </header>
     </div>
   );
