@@ -4,11 +4,11 @@ import Parent from './Parent.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Parent name="Zubair"/>
-      </header>
-    </div>
+      <div className="App">
+        <header className="App-header">
+          <Parent name="Zubair"/>
+        </header>
+      </div>
   );
 }
 
